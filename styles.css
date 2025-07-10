@@ -2,6 +2,26 @@ html {
     scroll-behavior: smooth;
 }
 
+/* .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+} */
+
+/* .material-symbols-outlined{
+    vertical-align: -5px;
+    margin: 0px 2px;
+} */
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -78,53 +98,72 @@ a{
 }
 
 .recipe1 li{
-    margin-left: 30px;
+    margin-left:50px;
 }
 
 .recipe1{
     display: flex;
-    justify-content: space-between;
-    margin-top: auto;
+    justify-content: space-around;
+    margin: 0px 20px;
 }
 
 
 
 .recipe1img{
     align-self: center;
-    padding-right: 50px;
 }
 
 .recipe2 li{
-    margin-left: 30px;
+    margin-left:50px;
 }
 
 .recipe2{
     display: flex;
     justify-content: space-between;
+    margin: 0px 20px;
 }
 
 .recipe2img{
     align-self: center;
-    padding-right: 50px;
+}
+
+.recipe3 li{
+    margin-left:50px;
+}
+
+.recipe3{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.recipe3img{
+    align-self: center;
 }
 
 img{
     border-radius: 15px;
     width: 200px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 4px 4px 16px black;
     transition: all 0.6s ;
 }
 
 .recipe1itmes{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
 }
 
 .recipe2itmes{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+
+}
+
+
+.recipe3itmes{
+    display: flex;
+    flex-direction: column;
 }
 
 img:hover{
@@ -152,3 +191,35 @@ footer{
     z-index: 1000;
     padding: 10px 0;
 }
+
+
+@media (max-width: 750px) {
+    .content{
+        flex-direction: column;
+        margin-top :100px; 
+        margin-bottom: 100px;
+    }
+    .recipe1, .recipe2, .recipe3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe1img , .recipe2img, .recipe3img{
+        padding: 20px 0px;
+        display: flex;
+        margin: auto;
+    }  
+
+    .recipe1itmes, .recipe2itmes, .recipe3itmes{
+        align-items: center;
+    }
+
+    h3 h2{
+        padding: 10px 0px;
+        text-align: center;
+    }
+}
+
+
+
